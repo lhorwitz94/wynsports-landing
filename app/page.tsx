@@ -66,7 +66,7 @@ export default function Home() {
       <section className="zigzag-bg relative flex flex-col items-center justify-center overflow-hidden px-6 py-20 text-center sm:py-24">
         <div className="relative flex flex-col items-center">
           <Image
-            src="/images/wynsports-logo.png"
+            src="/images/wynsports-newlogo.png"
             alt="WynSports"
             width={340}
             height={340}
