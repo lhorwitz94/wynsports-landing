@@ -20,21 +20,21 @@ export default function ProductCard({
 }: ProductCardProps) {
   const cardContent = (
     <div className="group relative flex h-full flex-col gap-4 rounded-2xl bg-wyn-yellow p-8 shadow-sm ring-1 ring-black/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
-      <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-wyn-purple-accent text-wyn-yellow">
+      <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-wyn-purple text-wyn-yellow">
         {icon}
       </div>
 
-      <h3 className="font-heading text-2xl font-bold text-wyn-purple-accent">
+      <h3 className="font-heading text-2xl font-bold text-wyn-purple">
         {name}
       </h3>
 
-      <p className="flex-1 text-base leading-relaxed text-wyn-purple-accent">
+      <p className="flex-1 text-base leading-relaxed text-wyn-purple">
         {description}
       </p>
 
       <div className="pt-2">
         {href ? (
-          <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-wyn-purple-accent">
+          <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-wyn-purple">
             Visit site
             <svg
               width="16"
@@ -52,7 +52,7 @@ export default function ProductCard({
             </svg>
           </span>
         ) : (
-          <span className="inline-flex items-center gap-1.5 rounded-full bg-wyn-purple-accent/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-wyn-purple-accent">
+          <span className="inline-flex items-center gap-1.5 rounded-full bg-wyn-purple/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-wyn-purple">
             Coming soon
           </span>
         )}
