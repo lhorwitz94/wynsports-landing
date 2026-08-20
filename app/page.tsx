@@ -1,12 +1,8 @@
 import Image from "next/image";
 import ProductCard from "@/components/ProductCard";
 
-// Tagline options — pick your favorite and drop it into the hero below:
-// 1. "The home for women's sports — tickets, content, and community."
-// 2. "One brand. Every way to follow women's sports."
-// 3. "Built for the fans powering women's sports forward."
 const TAGLINE =
-  "The home for women's sports — tickets, content, and community.";
+  "Reimagining digital fan experiences. Building the future of fandom";
 
 const TicketIcon = () => (
   <svg
@@ -59,7 +55,7 @@ const PRODUCTS = [
       "A content hub for women's sports — news, video, and community in one feed.",
     icon: <FeedIcon />,
     accent: "lavender" as const,
-    href: undefined,
+    href: "https://www.wsportstix.com/news",
   },
 ];
 
@@ -67,22 +63,18 @@ export default function Home() {
   return (
     <main>
       {/* Hero */}
-      <section className="zigzag-bg relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-6 text-center">
+      <section className="zigzag-bg relative flex flex-col items-center justify-center overflow-hidden px-6 py-20 text-center sm:py-24">
         <div className="relative flex flex-col items-center">
-          <div
-            className="w-56 overflow-hidden rounded-2xl [mask-image:radial-gradient(closest-side,black_78%,transparent_100%)] [-webkit-mask-image:radial-gradient(closest-side,black_78%,transparent_100%)] sm:w-72 md:w-80"
-          >
-            <Image
-              src="/images/wynsports-logo.png"
-              alt="WynSports"
-              width={340}
-              height={340}
-              priority
-              className="h-full w-full"
-            />
-          </div>
+          <Image
+            src="/images/wynsports-logo.png"
+            alt="WynSports"
+            width={340}
+            height={340}
+            priority
+            className="w-72 sm:w-96 md:w-[28rem]"
+          />
 
-          <p className="mt-8 max-w-xl font-body text-lg text-wyn-cream/90 sm:text-xl">
+          <p className="mt-6 max-w-xl font-body text-lg text-wyn-cream/90 sm:text-xl">
             {TAGLINE}
           </p>
         </div>
@@ -90,7 +82,7 @@ export default function Home() {
         <a
           href="#products"
           aria-label="Scroll to products"
-          className="absolute bottom-10 flex flex-col items-center gap-1 text-wyn-lavender/80 transition-colors hover:text-wyn-gold"
+          className="mt-14 flex flex-col items-center gap-1 text-wyn-lavender/80 transition-colors hover:text-wyn-gold"
         >
           <span className="text-xs font-semibold uppercase tracking-widest">
             Our products
@@ -114,16 +106,7 @@ export default function Home() {
       {/* Products */}
       <section id="products" className="bg-white px-6 py-24 sm:py-32">
         <div className="mx-auto max-w-5xl">
-          <div className="mx-auto max-w-2xl text-center">
-            <h2 className="font-heading text-4xl font-extrabold text-wyn-purple-dark sm:text-5xl">
-              Our Products
-            </h2>
-            <p className="mt-4 text-lg text-neutral-500">
-              A growing family of products built for women's sports fans.
-            </p>
-          </div>
-
-          <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
             {PRODUCTS.map((product, index) => (
               <ProductCard key={product.name} index={index} {...product} />
             ))}
