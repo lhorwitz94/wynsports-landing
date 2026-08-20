@@ -46,7 +46,6 @@ const PRODUCTS = [
     description:
       "A ticketing aggregator for women's sports — WNBA, NWSL, PWHL, tennis, golf, and college sports, pulled together in one place.",
     icon: <TicketIcon />,
-    accent: "gold" as const,
     href: "https://wsportstix.com",
   },
   {
@@ -54,7 +53,6 @@ const PRODUCTS = [
     description:
       "A content hub for women's sports — news, video, and community in one feed.",
     icon: <FeedIcon />,
-    accent: "lavender" as const,
     href: "https://www.wsportstix.com/news",
   },
 ];

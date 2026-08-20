@@ -7,41 +7,20 @@ type ProductCardProps = {
   name: string;
   description: string;
   icon: ReactNode;
-  accent: "gold" | "lavender";
   href?: string;
   index?: number;
 };
-
-const accentStyles = {
-  gold: {
-    iconWrap: "bg-wyn-gold/10 text-wyn-gold-dark",
-    ring: "group-hover:ring-wyn-gold/40",
-    link: "text-wyn-gold-dark",
-  },
-  lavender: {
-    iconWrap: "bg-wyn-lavender/10 text-wyn-purple",
-    ring: "group-hover:ring-wyn-lavender/40",
-    link: "text-wyn-purple",
-  },
-} as const;
 
 export default function ProductCard({
   name,
   description,
   icon,
-  accent,
   href,
   index = 0,
 }: ProductCardProps) {
-  const styles = accentStyles[accent];
-
   const cardContent = (
-    <div
-      className={`group relative flex h-full flex-col gap-4 rounded-2xl border border-black/5 bg-white p-8 shadow-sm ring-1 ring-transparent transition-all duration-300 hover:-translate-y-1 hover:shadow-xl ${styles.ring}`}
-    >
-      <div
-        className={`flex h-14 w-14 items-center justify-center rounded-xl ${styles.iconWrap}`}
-      >
+    <div className="group relative flex h-full flex-col gap-4 rounded-2xl bg-wyn-gold p-8 shadow-sm ring-1 ring-black/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+      <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-wyn-purple-dark text-wyn-gold">
         {icon}
       </div>
 
@@ -49,15 +28,13 @@ export default function ProductCard({
         {name}
       </h3>
 
-      <p className="flex-1 text-base leading-relaxed text-neutral-600">
+      <p className="flex-1 text-base leading-relaxed text-wyn-purple-dark/80">
         {description}
       </p>
 
       <div className="pt-2">
         {href ? (
-          <span
-            className={`inline-flex items-center gap-1.5 text-sm font-semibold ${styles.link}`}
-          >
+          <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-wyn-purple-dark">
             Visit site
             <svg
               width="16"
@@ -75,7 +52,7 @@ export default function ProductCard({
             </svg>
           </span>
         ) : (
-          <span className="inline-flex items-center gap-1.5 rounded-full bg-neutral-100 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-neutral-500">
+          <span className="inline-flex items-center gap-1.5 rounded-full bg-wyn-purple-dark/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-wyn-purple-dark">
             Coming soon
           </span>
         )}
