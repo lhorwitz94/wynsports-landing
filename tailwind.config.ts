@@ -10,8 +10,10 @@ const config: Config = {
       colors: {
         "wyn-purple": "#2E1065",
         "wyn-purple-dark": "#1F0A47",
+        "wyn-purple-accent": "#9570FF",
         "wyn-gold": "#F5A623",
         "wyn-gold-dark": "#E8961E",
+        "wyn-yellow": "#F5AD12",
         "wyn-lavender": "#B8A6F0",
         "wyn-cream": "#F5F3FF",
       },
