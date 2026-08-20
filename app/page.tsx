@@ -74,7 +74,7 @@ export default function Home() {
             className="w-72 sm:w-96 md:w-[28rem]"
           />
 
-          <p className="mt-6 max-w-xl font-body text-lg text-wyn-cream/90 sm:text-xl">
+          <p className="mt-6 whitespace-nowrap font-body text-[clamp(0.6rem,2.6vw,1.25rem)] text-wyn-cream/90">
             {TAGLINE}
           </p>
         </div>
