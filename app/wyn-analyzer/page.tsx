@@ -22,7 +22,9 @@ export default function WynAnalyzerPage() {
           Wyn Analyzer
         </p>
         <h1 className="mt-3 max-w-2xl font-heading text-3xl font-extrabold text-white sm:text-5xl">
-          Find your women&apos;s sports fan community
+          Find your women&apos;s
+          <br />
+          sports fan community
         </h1>
         <p className="mt-4 max-w-xl font-body text-base text-wyn-cream/90 sm:text-lg">
           Five quick questions. Real fan data, not stereotypes. See which league&apos;s
