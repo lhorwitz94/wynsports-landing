@@ -40,6 +40,22 @@ const FeedIcon = () => (
   </svg>
 );
 
+const CompassIcon = () => (
+  <svg
+    width="28"
+    height="28"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <circle cx="12" cy="12" r="10" />
+    <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" />
+  </svg>
+);
+
 const GameIcon = () => (
   <svg
     width="28"
@@ -142,12 +158,17 @@ export default function Home() {
       {/* Wyn Analyzer teaser */}
       <section className="bg-wyn-cream px-6 py-16 sm:py-20">
         <div className="mx-auto flex max-w-3xl flex-col items-center gap-4 text-center">
-          <p className="text-xs font-semibold uppercase tracking-widest text-wyn-purple/60">
-            Wyn Analyzer
-          </p>
-          <h2 className="font-heading text-2xl font-bold text-wyn-purple sm:text-3xl">
+          <div className="flex items-center gap-3">
+            <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-wyn-purple text-wyn-yellow">
+              <CompassIcon />
+            </div>
+            <h2 className="font-heading text-3xl font-extrabold text-wyn-purple sm:text-4xl">
+              Wyn Analyzer
+            </h2>
+          </div>
+          <p className="text-lg font-semibold text-wyn-purple/80">
             Not sure which fan community is yours?
-          </h2>
+          </p>
           <p className="max-w-xl text-base leading-relaxed text-wyn-purple/80">
             Take the 5-question quiz to find out — grounded in real fan data across
             WNBA, NWSL, PWHL, women&apos;s golf &amp; tennis, college sports, and Unrivaled.
