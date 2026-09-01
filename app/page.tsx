@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import ProductCard from "@/components/ProductCard";
 
 const TAGLINE =
@@ -135,6 +136,42 @@ export default function Home() {
               <ProductCard key={product.name} index={index} {...product} />
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Wyn Analyzer teaser */}
+      <section className="bg-wyn-cream px-6 py-16 sm:py-20">
+        <div className="mx-auto flex max-w-3xl flex-col items-center gap-4 text-center">
+          <p className="text-xs font-semibold uppercase tracking-widest text-wyn-purple/60">
+            Wyn Analyzer
+          </p>
+          <h2 className="font-heading text-2xl font-bold text-wyn-purple sm:text-3xl">
+            Not sure which fan community is yours?
+          </h2>
+          <p className="max-w-xl text-base leading-relaxed text-wyn-purple/80">
+            Take the 5-question quiz to find out — grounded in real fan data across
+            WNBA, NWSL, PWHL, women&apos;s golf &amp; tennis, college sports, and Unrivaled.
+          </p>
+          <Link
+            href="/wyn-analyzer"
+            className="group mt-2 inline-flex items-center gap-1.5 rounded-full bg-wyn-purple px-6 py-3 text-sm font-semibold text-wyn-cream transition-colors hover:bg-wyn-purple-dark"
+          >
+            Take the quiz
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="transition-transform duration-300 group-hover:translate-x-1"
+            >
+              <path d="M5 12h14" />
+              <path d="m12 5 7 7-7 7" />
+            </svg>
+          </Link>
         </div>
       </section>
 
