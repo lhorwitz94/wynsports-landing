@@ -170,8 +170,8 @@ export default function Home() {
             Not sure which fan community is yours?
           </p>
           <p className="max-w-xl text-base leading-relaxed text-wyn-purple/80">
-            Take the 5-question quiz to find out — grounded in real fan data across
-            WNBA, NWSL, PWHL, women&apos;s golf &amp; tennis, college sports, and Unrivaled.
+            Take a 5-question quiz to find out what kind of fan you are. Grounded in
+            real fan data across WNBA, NWSL, PWHL, women&apos;s golf, tennis, and college sports.
           </p>
           <Link
             href="/wyn-analyzer"
