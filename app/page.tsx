@@ -169,7 +169,7 @@ export default function Home() {
           <p className="text-lg font-semibold text-wyn-purple/80">
             Not sure which fan community is yours?
           </p>
-          <p className="max-w-xl text-base leading-relaxed text-wyn-purple/80">
+          <p className="max-w-2xl text-base leading-relaxed text-wyn-purple/80">
             Take a 5-question quiz to find out what kind of fan you are. Grounded in
             real fan data across WNBA, NWSL, PWHL, women&apos;s golf, tennis, and college sports.
           </p>
