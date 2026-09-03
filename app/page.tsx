@@ -97,16 +97,16 @@ const InteractiveIcon = () => (
 // Add future products here — the grid below flows automatically.
 const PRODUCTS = [
   {
-    name: "WTIX",
+    name: "Ticket Marketplaces",
     description:
-      "A ticketing aggregator for women's sports — WNBA, NWSL, PWHL, tennis, golf, and college sports, pulled together in one place.",
+      "WTIX is a ticketing aggregator for women's sports — WNBA, NWSL, PWHL, tennis, golf, and college sports, pulled together in one place.",
     icon: <TicketIcon />,
     href: "https://wsportstix.com",
   },
   {
-    name: "WynFeed",
+    name: "Content Feeds",
     description:
-      "A content hub for women's sports — news, video, and community in one feed.",
+      "WynFeed is a content hub for women's sports — news, video, and community in one feed.",
     icon: <FeedIcon />,
     href: "https://www.wsportstix.com/news",
   },
@@ -122,6 +122,7 @@ const PRODUCTS = [
     description:
       "Elevating digital content into responsive, highly engaging experiences",
     icon: <InteractiveIcon />,
+    href: "https://wpbl-home-run.vercel.app/",
   },
 ];
 
