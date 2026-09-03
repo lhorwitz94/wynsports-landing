@@ -75,6 +75,25 @@ const GameIcon = () => (
   </svg>
 );
 
+const InteractiveIcon = () => (
+  <svg
+    width="28"
+    height="28"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <path d="m9 9 5 12 1.8-5.2L21 14Z" />
+    <path d="M7.2 2.2 8 5.1" />
+    <path d="m5.1 8-2.9-.8" />
+    <path d="M14 4.1 12 6" />
+    <path d="m6 12-1.9 2" />
+  </svg>
+);
+
 // Add future products here — the grid below flows automatically.
 const PRODUCTS = [
   {
@@ -97,6 +116,12 @@ const PRODUCTS = [
       "Custom games built for fans, by fans. Define the experience you're looking for, play with friends or alone, show how you engage as a fan.",
     icon: <GameIcon />,
     href: "https://college-trivia.vercel.app/",
+  },
+  {
+    name: "Interactive experiences",
+    description:
+      "Elevating digital content into responsive, highly engaging experiences",
+    icon: <InteractiveIcon />,
   },
 ];
 
