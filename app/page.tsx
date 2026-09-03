@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import ProductCard from "@/components/ProductCard";
 
 const TAGLINE =
@@ -124,6 +123,13 @@ const PRODUCTS = [
     icon: <InteractiveIcon />,
     href: "https://wpbl-home-run.vercel.app/",
   },
+  {
+    name: "Fan Analyzers",
+    description:
+      "A custom, short-question quiz to find out what kind of fan you are. Grounded in real fan data across WNBA, NWSL, PWHL, women's golf, tennis, and college sports.",
+    icon: <CompassIcon />,
+    href: "https://www.thewyn.club/wyn-analyzer",
+  },
 ];
 
 export default function Home() {
@@ -178,47 +184,6 @@ export default function Home() {
               <ProductCard key={product.name} index={index} {...product} />
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* Wyn Analyzer teaser */}
-      <section className="bg-wyn-cream px-6 py-16 sm:py-20">
-        <div className="mx-auto flex max-w-3xl flex-col items-center gap-4 text-center">
-          <div className="flex items-center gap-3">
-            <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-wyn-purple text-wyn-yellow">
-              <CompassIcon />
-            </div>
-            <h2 className="font-heading text-3xl font-extrabold text-wyn-purple sm:text-4xl">
-              Wyn Analyzer
-            </h2>
-          </div>
-          <p className="text-lg font-semibold text-wyn-purple/80">
-            Not sure which fan community is yours?
-          </p>
-          <p className="max-w-2xl text-base leading-relaxed text-wyn-purple/80">
-            Take a 5-question quiz to find out what kind of fan you are. Grounded in
-            real fan data across WNBA, NWSL, PWHL, women&apos;s golf, tennis, and college sports.
-          </p>
-          <Link
-            href="/wyn-analyzer"
-            className="group mt-2 inline-flex items-center gap-1.5 rounded-full bg-wyn-purple px-6 py-3 text-sm font-semibold text-wyn-cream transition-colors hover:bg-wyn-purple-dark"
-          >
-            Take the quiz
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="transition-transform duration-300 group-hover:translate-x-1"
-            >
-              <path d="M5 12h14" />
-              <path d="m12 5 7 7-7 7" />
-            </svg>
-          </Link>
         </div>
       </section>
 
