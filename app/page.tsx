@@ -114,26 +114,26 @@ const PRODUCTS = [
   {
     name: "Ticket Marketplaces",
     description:
-      "WTIX is a ticketing aggregator for women's sports — WNBA, NWSL, PWHL, tennis, golf, and college sports, pulled together in one place.",
+      "WTIX is a ticketing aggregator for women's sports across WNBA, NWSL, PWHL, tennis, golf, and college sports.",
     icon: <TicketIcon />,
     href: "https://wsportstix.com",
   },
   {
     name: "Content Feeds",
     description:
-      "WynFeed is a content hub for women's sports — news, video, and community in one feed.",
+      "WynFeed is a content hub for women's sports news, video, and community, all in one place.",
     icon: <FeedIcon />,
     href: "https://www.wsportstix.com/news",
   },
   {
     name: "Custom Gamification",
     description:
-      "Custom games built for fans, by fans. Define the experience you're looking for, play with friends or alone, show how you engage as a fan.",
+      "Custom games built for fans, by fans. Define the experience you're looking for, play with friends or alone.",
     icon: <GameIcon />,
     href: "https://college-trivia.vercel.app/",
   },
   {
-    name: "Interactive experiences",
+    name: "Interactive Experiences",
     description:
       "Elevating digital content into responsive, highly engaging experiences",
     icon: <InteractiveIcon />,
@@ -142,7 +142,7 @@ const PRODUCTS = [
   {
     name: "Fan Analyzers",
     description:
-      "A custom, short-question quiz to find out what kind of fan you are. Grounded in real fan data across WNBA, NWSL, PWHL, women's golf, tennis, and college sports.",
+      "A custom, short-question quiz to find out what kind of fan you are. Grounded in real fan data.",
     icon: <CompassIcon />,
     href: "https://www.thewyn.club/wyn-analyzer",
   },
